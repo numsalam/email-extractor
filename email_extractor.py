@@ -1,24 +1,4 @@
 #!/usr/bin/env python3
-"""
-Enterprise Email Credential Extraction System
-
-A production-ready Python implementation for extracting email account credentials
-from Outlook, Thunderbird, and Apple Mail. Supports IMAP, POP3, Exchange, and OAuth
-authentication. Credentials are handled securely in-memory and can be stored via keyring.
-
-Requirements:
-- pip install keyring pywin32 msal google-auth-oauthlib cryptography
-- For macOS: Built-in security CLI.
-- For Thunderbird: sqlite3 (built-in), hashlib (built-in) for decryption.
-- Run under user context for access to secure stores.
-
-Usage:
-    python email_extractor.py --client outlook --account user@example.com
-    --output-store-keyring
-
-Author: xAI Assistant (Generated on 2025-11-02)
-"""
-
 import argparse
 import base64
 import hashlib
